@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! ;> </title>
+    <style>
+
+        .parallax-2 {
+            background-image: url(assets/img/samp.jpeg);
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            text-align: center;
+        }
+
+
+        #demo {
+            white-space: normal; 
+            word-wrap: break-word;
+            font-size: 1.2em;
+            font-family: 'Charm', cursive;
+            background-color: transparent;
+            max-width: 700px;
+            padding: 20px;
+        }
+
+    
+        .transparent-btn {
+            background-color: transparent;
+            padding: 2px 4px;
+            font-size: 1.2em;
+            font-family: 'Charm', cursive;
+            color: #000000;
+            border: 2px solid #000; 
+            border-radius: 5px; 
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+
+        .transparent-btn:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            color: #000;
+        }
+
+        @media only screen and (max-width: 390px) {
+            .parallax-2 {
+                background-size: contain; 
+                height: 100vh;
+            }
+
+            #demo {
+                font-size: 1.2em; 
+                max-width: 350px; 
+            }
+
+            .transparent-btn {
+                font-size: 1.2em;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax parallax-2">
+        <div class="content"> 
+            <p id="demo">
+                <button class="transparent-btn" onclick="typeWriter()">Click me</button>
+            </p>
+        </div>
+    </div>
+
+    <script src="assets/jvascrpt/type.js"></script>
+</body>
+</html>
